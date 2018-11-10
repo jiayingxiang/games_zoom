@@ -4,7 +4,9 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>-->
+    <transition name="jj">
     <router-view/>
+    </transition>
   </div>
 </template>
 
@@ -33,4 +35,10 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }*/
+.jj-enter-active{
+  transition:all .5s linear;
+}
+.jj-enter{
+  opacity:0;
+}
 </style>
